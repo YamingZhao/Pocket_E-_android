@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar" />
+
+    <net.wezu.viewpagerindicator.view.viewpager.SViewPager
+        android:id="@+id/main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#eee"
+        android:layout_weight="1"/>
+
+    <net.wezu.viewpagerindicator.view.indicator.FixedIndicatorView
+        android:id="@+id/main_indicator"
+        android:background="@drawable/tabbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</LinearLayout>

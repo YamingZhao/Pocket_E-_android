@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:background="#97c8ff">
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/btn_switch"
+        app:cb_color="#9945be17"
+        android:src="@mipmap/btn_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:padding="8dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_06"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:padding="20dp"
+        android:layout_above="@+id/btn_switch"
+        android:layout_marginBottom="30dp"
+        android:layout_alignLeft="@+id/btn_switch"
+        android:layout_marginLeft="50dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_03"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="61dp"
+        android:padding="20dp"
+        android:layout_below="@+id/btn_switch"
+        android:layout_alignRight="@+id/btn_switch"
+        android:layout_alignEnd="@+id/btn_switch" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_07"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:padding="20dp"
+        android:layout_toLeftOf="@+id/btn_switch"
+        android:layout_above="@+id/btn_switch"
+        android:layout_marginBottom="24dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_02"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:padding="20dp"
+        android:layout_below="@+id/btn_switch"
+        android:layout_toLeftOf="@+id/btn_switch"
+        android:layout_toStartOf="@+id/btn_switch"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="8dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_04"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:padding="20dp"
+        android:layout_below="@+id/btn_switch"
+        android:layout_toRightOf="@+id/btn_switch"
+        android:layout_marginTop="-12dp"
+        android:layout_marginLeft="16dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_01"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_switch"
+        android:layout_toStartOf="@+id/btn_switch"
+        android:layout_marginRight="24dp" />
+
+    <net.wezu.widget.CircleButton
+        android:id="@+id/service_05"
+        app:cb_color="#66000000"
+        app:cb_pressedRingWidth="0dp"
+        android:src="@mipmap/main_icon_fix"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:padding="20dp"
+        android:layout_alignTop="@+id/btn_switch"
+        android:layout_toRightOf="@+id/btn_switch"
+        android:layout_toEndOf="@+id/btn_switch"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="-24dp" />
+
+</RelativeLayout>

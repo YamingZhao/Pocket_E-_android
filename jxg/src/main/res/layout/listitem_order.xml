@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/white_line_top_bottom_selector"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/white_line_bottom"
+        android:padding="12dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:text="订单号"/>
+
+        <TextView
+            android:id="@+id/txt_order_no"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt_order_payment_status"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/view_worker"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <!--头像-->
+            <net.wezu.widget.RoundImageview.RoundedNetImageView
+                android:id="@+id/img_user_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:riv_corner_radius="30dp"
+                app:riv_border_width="3dp"
+                app:riv_border_color="#e5e5e5"
+                android:src="@mipmap/bg_default_avata"/>
+
+            <TextView
+                android:text="机修工名字"
+                android:id="@+id/txt_worker_name"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_below="@+id/img_user_avatar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_service_name"
+            android:text="送油"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view_worker"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/txt_total_amount"
+            android:text="￥ 120.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_service_name"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/txt_tip_fee"
+            android:text="￥ 120.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray_black"
+            android:layout_below="@+id/txt_total_amount"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txt_total_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_service_name"
+            android:layout_below="@+id/txt_service_name"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txt_order_type"
+            android:textColor="#ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_total_accept"
+            android:layout_alignLeft="@+id/txt_service_name"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txt_order_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:layout_alignTop="@+id/txt_order_type"
+            android:layout_toRightOf="@+id/txt_order_type" />
+
+        <ImageView
+            android:src="@mipmap/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

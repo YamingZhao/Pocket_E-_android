@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="false">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="身份证信息"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_line_top_bottom">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:id="@+id/img_select_id1"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/add_worker_lic"
+                android:id="@+id/img_select_id2"
+                android:layout_toRightOf="@+id/img_select_id1"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:id="@+id/img_select_id3"
+                android:layout_toRightOf="@+id/img_select_id2"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:id="@+id/img_select_id4"
+                android:layout_toRightOf="@+id/img_select_id3"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_edit"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#cccccc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_delete"
+                    android:id="@+id/btn_s_delete" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="工作证信息"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_line_top_bottom">
+
+
+            <ImageView
+                android:id="@+id/img_select_work_lic1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:id="@+id/img_select_work_lic2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:layout_toRightOf="@+id/img_select_work_lic1"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:id="@+id/img_select_work_lic3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:layout_toRightOf="@+id/img_select_work_lic2"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <ImageView
+                android:id="@+id/img_select_work_lic4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_upload_default"
+                android:layout_toRightOf="@+id/img_select_work_lic3"
+                android:layout_marginLeft="8dp"
+                android:background="#f5f5f5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_edit" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#cccccc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_delete"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="个人头像"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_line_top_bottom">
+
+
+            <ImageView
+                android:id="@+id/img_user_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/upload_avatar_logo"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_edit" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="#cccccc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_delete"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <net.wezu.widget.LabeledTextItem
+            android:visibility="gone"
+            android:id="@+id/lti_work_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/white_line_top_bottom"
+            app:label="维修项目"/>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RedCornerButton"
+            android:layout_margin="10dp"
+            android:text="注册"/>
+    </LinearLayout>
+</ScrollView>

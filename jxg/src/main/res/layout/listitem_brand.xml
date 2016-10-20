@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/white">
+
+    <net.wezu.widget.RoundImageview.RoundedNetImageView
+        android:id="@+id/iv_brand_logo"
+        android:layout_margin="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+        <!--app:riv_corner_radius="3dp"-->
+        <!--app:riv_border_width="1dp"-->
+        <!--app:riv_border_color="@android:color/darker_gray" />-->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_brand_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

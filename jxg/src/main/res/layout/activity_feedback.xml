@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:background="@drawable/edittext_border"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="8dp"
+        android:singleLine="false"
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:gravity="top|left" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RedCornerButton"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="提 交"/>
+
+</LinearLayout>

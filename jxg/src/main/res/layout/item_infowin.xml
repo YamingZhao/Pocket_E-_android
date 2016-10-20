@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp" android:layout_height="match_parent"
+    android:background="@drawable/shape_layout_semiwhite_round"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/tv_infowin_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="未知地点"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_infowin_desc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="未知地址"
+        android:textSize="12sp" />
+
+</LinearLayout>

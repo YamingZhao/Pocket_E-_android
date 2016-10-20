@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <net.wezu.widget.RoundImageview.RoundedNetImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:riv_corner_radius="25dp"
+        app:riv_border_width="2dp"
+        android:id="@+id/img_avatar" />
+
+    <TextView
+        android:id="@+id/tv_worker_name"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_avatar"
+        android:layout_alignLeft="@+id/img_avatar"
+        android:layout_alignRight="@+id/img_avatar"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务项目"
+        android:id="@+id/lbl_item"
+        android:layout_alignTop="@+id/img_avatar"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务项目"
+        android:layout_toRightOf="@+id/lbl_item"
+        android:id="@+id/tv_item"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="综合评分"
+        android:id="@+id/lbl_rating"
+        android:layout_alignLeft="@+id/lbl_item"
+        android:layout_alignTop="@+id/rb_rating"
+        android:layout_alignBottom="@+id/rb_rating"
+        android:gravity="center_vertical" />
+
+    <RatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppRatingBarSmallStyle"
+        android:isIndicator="true"
+        android:layout_alignLeft="@+id/tv_item"
+        android:layout_below="@+id/tv_item"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评分时间"
+        android:id="@+id/lbl_comment_date"
+        android:layout_alignLeft="@+id/lbl_rating"
+        android:layout_alignTop="@+id/tv_comment_date"
+        android:layout_alignBottom="@+id/tv_comment_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务项目"
+        android:id="@+id/tv_comment_date"
+        android:layout_alignLeft="@+id/tv_item"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rb_rating"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

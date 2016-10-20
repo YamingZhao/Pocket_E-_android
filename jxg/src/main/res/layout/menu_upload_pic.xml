@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="bottom" android:padding="8dp">
+
+    <Button
+        android:id="@+id/btn_from_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="拍 照"/>
+
+    <Button
+        android:id="@+id/btn_from_local"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="从相册中选取"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_white"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="取 消"/>
+
+</LinearLayout>

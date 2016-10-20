@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/default_background">
+
+    <include layout="@layout/action_bar" />
+
+    <TextView
+        android:id="@+id/vat_true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        android:background="@drawable/white_line_top_bottom_selector"
+        android:text="开通"/>
+
+    <TextView
+        android:id="@+id/vat_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/white_line_bottom_selector"
+        android:text="未开通"/>
+
+</LinearLayout>

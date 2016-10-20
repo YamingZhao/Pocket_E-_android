@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/framework/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="b84128f2237080959640816b41187687843117d3">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/intermediates-exploded-aar-framework_23ad423c58c1cc9fc02bc4e8032cbb0832a89c8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/GetuiSDK2.6.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="3100fe637e8a196d202d7ab652355d5ecc31d465">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/GetuiSDK2.6.1.0_e2836731d40513272c2842f611866b9b285ac0ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/incremental-classes/user/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c82e39569c0f308804398a49cf7747c35c7111df">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/instant-run-bootstrap_bae1d7efba8b01220afcb35eb780e467726d536f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/com.android.support-appcompat-v7-22.1.1_bfc73d77cc6ed925aa2e0831d90b15d0e4fb080c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/viewpagerindicator/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="d1a0e57efefeb5006d22cde161e5425744f0dbbc">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/intermediates-exploded-aar-viewpagerindicator_2f0ea0b2ba352ea6898e0a8b61b1d0e74a6cb988.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/com.android.support-support-v4-22.1.1_c57d09d6d9f49909a777b7ceb27bd0ca032c7b19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/internal_impl-22.1.1_6f389b4831b972c0e09844375825883cdba198c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/volley/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="5f4bfc9e95d2f352f14bf57947565f40ff812cb0">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/intermediates-exploded-aar-volley_8fd6ba4a17b05c8f0d9b114d32883dbdb9e05e8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/bugly_crash_release__2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4b297a8d6f2369bf53b4812e26aa96f2656ae39d">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/bugly_crash_release__2.1_776d4745e4e0af0634e97b1ae8861c882ca6f4b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/incremental-runtime-classes/user/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="3f5be6c6c58c4e43d781c4db7f3181d2a9187cb3">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/instant-run_15c52ea53c1cec4b643f5430183f0138edf5598f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/support-annotations-22.1.1_14227dfabbebf994cc1911f4132cfc9d4ca3dadb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="8c2ebe1214fe6bce0f814231707007447b29e7d3">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/BaiduLBS_Android_e2e73393d1ed2d04c38288c24fb14d1ea9deb2e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/GetuiExt-2.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="7825bfa9135d693e2046eab96fd94e724e0f9eda">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/GetuiExt-2.0.3_0443ea9c840a8851089b291e5e22bddac11dc7da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/exploded-aar/framework/jars/libs/gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="ca69b1ee2db8db82c3a4a2b280494eed9bc5cfb5">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/gson-2.3.1_e9ed547d22bbb0f03ee3fde1a62c09f27e95b4ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/asmack.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="fe03343aa1bcebe304b71c2c4ca64e447b86d565">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/asmack_f3d1508c3d1469c23b68fb8068d3f60c9cead309.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/libammsdk_5233cc169167b1a164bcf780be79d24522c7f72b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/pocket-car-fixing/jxg/libs/alipaySDK-20151014.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="9ab493c0f7a15797cda937737d8924528f3cab02">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/alipaySDK-20151014_ae6604f0a4a80e0940b06cce5b7ecbb8b0e0528c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/i310736/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/i310736/pocket-car-fixing/jxg/build/intermediates/pre-dexed/user/debug/butterknife-7.0.1_a61a9f47cec32c053c822b698538bb97eedb609f.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,362 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.wezu.jxg">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permisstion.GET_TASKS" />
+
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permisstion.GetuiService.net.wezu.jxg" />
+
+    <permission android:name="getui.permisstion.GetuiService.net.wezu.jxg"
+        android:protectionLevel="normal" />
+
+    <application android:allowBackup="true" android:label="${APP_NAME}" android:name=".app.Application"
+        android:icon="${APP_ICON}" android:theme="@style/AppTheme">
+
+        <meta-data android:name="is_worker" android:value="${IS_WORKER}" />
+
+        <!--<activity android:name=".ui.activity.AlipayDemoActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="orientation|keyboardHidden">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxe9ce385ee40f506b" />
+            </intent-filter>
+        </activity>
+
+
+    <activity android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".ui.map.BaiduMapPoiSearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <activity android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.service_order.user.HelpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.service_order.user.OrderDisputeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.mall.ProductListActivity2"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.mall.ProductCommentsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.mall.ProductDetailActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.payment.OrderPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.PersonalProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.ChangePaymentAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.EditTextActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.ChangeGenderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.ChangeVatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.UserAddressesListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.ListCategoriesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.profile.UserAddressEditActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.wallet.WorkerWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.user.wallet.ServiceOrderDrawoutDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.service_order.ServiceOrderImageGalleryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.AreaSelectorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.register.ServiceCategoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.find_password.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.settings.PersonalSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.settings.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.settings.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.MyCouponListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.cars.UserCarListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.cars.UserCarDetailActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified"/>
+
+        <activity android:name=".ui.user.cars.BrandSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.cars.SeriesSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.cars.ModalSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.user.cars.ColorSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.service_order.user.CreateServiceOrderActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.service_order.ServiceOrderActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.service_order.worker.WorkerServiceOrderDetailActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.service_order.worker.WorkerActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.map.RoutePlanActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.service_order.ServiceOrderDetailActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.service_order.user.ServiceOrderAddCommentActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.order.OrderDetailForUserActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.shopping_cart.CreateOrderActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.shopping_cart.ProductOrderListActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.shopping_cart.ProductOrderDetailActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+        <activity android:name=".ui.shopping_cart.ShippingModelSelectorActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity android:name=".ui.shopping_cart.InvoiceInputActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity android:name=".ui.shopping_cart.ShoppingCartActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+
+        <activity android:name=".ui.map.BaiduMapActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 微信支付 配置开始 -->
+
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <activity android:name="net.wezu.jxguser.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+
+        <!--<receiver android:name=".AppRegister"-->
+            <!--android:permission="com.tencent.mm.plugin.permission.SEND">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- 微信支付 结束 -->
+
+        <!--<meta-data android:name="PUSH_APPID" android:value="h9ovvKA3Lh9M3RR1zGFKX8" />-->
+        <!--<meta-data android:name="PUSH_APPKEY" android:value="CU2jmxVY9UAGpbq1Ns6lx9" />-->
+        <!--<meta-data android:name="PUSH_APPSECRET" android:value="sx6OqSYTtU7oHh5B1HsFx6" />-->
+
+        <meta-data android:name="PUSH_APPID" android:value="woosOe82AVAKUb6mT2dBoA" />
+        <meta-data android:name="PUSH_APPKEY" android:value="5vKMYbRmLj6HytQA5LwJG4" />
+        <meta-data android:name="PUSH_APPSECRET" android:value="SBtpUeSS0D8w757coce2p7" />
+
+        <receiver android:name=".receiver.GTPushReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.woosOe82AVAKUb6mT2dBoA" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:process=":pushservice"
+            android:exported="true"
+            android:label="NotificationCenter" >
+        </service>
+
+        <!--<service android:name="net.wezu.framework.update.DownloadService"-->
+            <!--android:exported="true" android:label="" />-->
+
+        <service android:name="com.igexin.sdk.PushServiceUser"
+            android:exported="true" android:label="NotificationCenterUser" />
+
+        <service
+            android:name=".service.LocationReportService"
+            android:enabled="true">
+            <!--<intent-filter>-->
+                <!--<action android:name="com.longkey.citymanager.action.UPDATE_LOCATION" />-->
+            <!--</intent-filter>-->
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:process=":pushservice"
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="${getui_provider}" />
+        <!-- android:authorities="downloads.第三方包名" -->
+
+        <receiver android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <action android:name="com.igexin.sdk.action.woosOe82AVAKUb6mT2dBoA" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置结束 -->
+
+        <activity android:name="org.androidpn.client.NotificationDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:enabled="true"
+            android:name="org.androidpn.client.NotificationService"
+            android:label="NotificationService">
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wZcu0mSEnOeGNdxW5t28nXpp" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+
+    </application>
+
+</manifest>

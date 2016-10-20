@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        config {
+            storeFile file('android.keystore')
+            storePassword "android"
+            keyAlias 'android.keystore'
+            keyPassword "android"
+        }
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "net.wezu.jxg"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 219
+        versionName "2.19"
+//        manifestPlaceholders = [
+//                GETUI_APP_ID    : "h9ovvKA3Lh9M3RR1zGFKX8",
+//                GETUI_APP_KEY   : "CU2jmxVY9UAGpbq1Ns6lx9",
+//                GETUI_APP_SECRET: "sx6OqSYTtU7oHh5B1HsFx6",  // DNCHophrao9FbjpqxQudZ1
+//                PACKAGE_NAME    : applicationId
+//        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors {
+        worker{
+            applicationId "net.wezu.jxg"
+            manifestPlaceholders = [
+                    APP_NAME: "@string/app_name_worker",
+                    APP_ICON: "@mipmap/ic_worker_launcher",
+                    IS_WORKER : "worker",
+                    getui_provider: "downloads.net.wezu.jxg"
+            ]
+        }
+        user {
+            applicationId "net.wezu.jxguser"
+
+            manifestPlaceholders = [
+                    APP_NAME: "@string/app_name_user",
+                    APP_ICON: "@mipmap/ic_user_launcher",
+                    IS_WORKER : "user",
+                    getui_provider: "downloads.net.wezu.jxguser"
+            ]
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
+				def file = output.outputFile
+				output.outputFile = new File(file.parent, "jxg-" + versionName + "-" + variant.productFlavors[0].manifestPlaceholders.IS_WORKER + ".apk")
+			}
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:support-annotations:22.1.1'
+
+    compile (name:'framework', ext:"aar")
+    compile (name:'viewpagerindicator', ext:"aar")
+    compile (name:'volley', ext:"aar")
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}

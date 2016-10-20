@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_cancel_text">19sp</dimen>
+    <dimen name="alert_height">55dip</dimen>
+    <dimen name="alert_width">30dip</dimen>
+    <dimen name="alert_margin_left1">30dip</dimen>
+    <dimen name="alert_margin_left2">20dip</dimen>
+    <dimen name="alert_margin_top">25dip</dimen>
+    <dimen name="alert_text_width">100dip</dimen>
+
+    <dimen name="alert_update_width">300dip</dimen>
+    <dimen name="alert_update_title_height">50dip</dimen>
+    <dimen name="alert_update_title_margin_left">20dip</dimen>
+    <dimen name="alert_update_title_margin_right">14dip</dimen>
+    <dimen name="alert_update_title_text">18sp</dimen>
+    <dimen name="alert_update_content_text">16sp</dimen>
+
+    <dimen name="default_item_padding">12dp</dimen>
+
+    <dimen name="label_item_padding">14dp</dimen>
+</resources>

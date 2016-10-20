@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar" />
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_margin="12dp"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:background="@drawable/border_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="提交"
+        style="@style/RedCornerButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

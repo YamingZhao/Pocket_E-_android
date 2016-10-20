@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background">
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <!--头像-->
+            <net.wezu.widget.RoundImageview.RoundedNetImageView
+                android:id="@+id/img_user_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:riv_corner_radius="70dp"
+                app:riv_border_width="4dp"
+                app:riv_border_color="@android:color/darker_gray"
+                android:src="@mipmap/bg_default_avata"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <!--更换头像-->
+            <TextView
+                android:id="@+id/txt_change_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更换头像"
+                android:padding="6dp"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginTop="5dp">
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/edit_nickname"
+                    android:background="@drawable/white_line_top_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="昵称"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/edit_gender"
+                    android:background="@drawable/white_line_top_bottom_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="性别"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/edit_mobile"
+                    android:background="@drawable/white_line_bottom_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="手机"
+                    app:value="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/white_line_top_bottom">
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/btn_address_list"
+                    android:background="@drawable/white_line_top_bottom_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="收货地址"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:visibility="gone"
+                    android:id="@+id/edit_vat"
+                    android:background="@drawable/white_line_bottom_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="增值税"
+                    app:value="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_for_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginBottom="20dp">
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/edit_payment_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_line_top_selector"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="支付账号"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/edit_company_name"
+                    android:background="@drawable/white_line_top_bottom_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="公司名称"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:id="@+id/et_company_address"
+                    android:background="@drawable/white_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="公司地址"
+                    app:value="" />
+
+                <net.wezu.widget.LabeledTextItem
+                    android:background="@drawable/white_line_top_bottom_selector"
+                    android:id="@+id/btn_categories_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/label_item_padding"
+                    app:label="维修项目"
+                    app:value="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

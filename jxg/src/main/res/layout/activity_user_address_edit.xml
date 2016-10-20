@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/white_line_top_bottom"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="联 系 人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                android:hint="请输入联系人"
+                android:maxLength="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/white_line_top_bottom"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="手 机 号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txt_mobile"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                android:hint="请输入手机号"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numeric="integer" />
+
+        </LinearLayout>
+
+        <net.wezu.widget.LabeledTextItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:labelColor="#333"
+            app:label="所在地区"
+            android:id="@+id/btn_select_area" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/white_line_top_bottom"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="详细地址"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txt_address"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                android:hint="请输入详细地址"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_isdefault"
+            android:orientation="horizontal"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="设为默认地址"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <net.wezu.widget.ToggleButton
+                android:id="@+id/tb_isdefault"
+                android:layout_marginRight="15dp"
+                android:layout_width="46dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RedCornerButton"
+        android:layout_margin="10dp"
+        android:text="保存地址"/>
+
+</LinearLayout>

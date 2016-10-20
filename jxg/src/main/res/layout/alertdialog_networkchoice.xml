@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@mipmap/bg_dialog"
+        android:padding="@dimen/alert_update_title_margin_left"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="@dimen/alert_update_width"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/alert_update_title_height"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/alert_update_title_margin_left"
+                android:layout_marginRight="@dimen/alert_update_title_margin_right"
+                android:src="@mipmap/ic_dialog_update"/>
+            <TextView
+                android:text="网络连接提示"
+                android:textSize="@dimen/alert_update_title_text"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:background="@color/tab_text_press"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:text="请开启您的网络连接"
+            android:layout_margin="@dimen/alert_update_title_margin_left"
+            android:textSize="@dimen/alert_update_content_text"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <View
+            android:background="@color/update_dialog_line"
+            android:layout_height="1dip"
+            android:layout_width="match_parent"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/alert_update_title_height"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:id="@+id/networkchoice_wifi"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="@dimen/alert_update_title_height"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="无线"
+                    android:drawablePadding="5dip"
+                    android:drawableLeft="@mipmap/wifi"
+                    android:textSize="@dimen/alert_update_title_text"
+                    android:textColor="@color/tab_text_press"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/update_dialog_line"
+                android:layout_height="@dimen/alert_update_title_height"
+                android:layout_width="1dip"/>
+            <LinearLayout
+                android:id="@+id/networkchoice_cellular_network"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="@dimen/alert_update_title_height"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="移动数据"
+                    android:drawablePadding="5dip"
+                    android:drawableLeft="@mipmap/cellular_network"
+                    android:textSize="@dimen/alert_update_title_text"
+                    android:textColor="@color/tab_text_press"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

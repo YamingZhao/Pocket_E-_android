@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/default_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ccc"
+        android:text="上传头像，做个有头有脸的人。"
+        android:textSize="13sp"/>
+
+    <!--头像-->
+    <net.wezu.widget.RoundImageview.RoundedNetImageView
+        android:id="@+id/img_user_avatar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:riv_corner_radius="50dp"
+        app:riv_border_width="4dp"
+        app:riv_border_color="@android:color/darker_gray"
+        android:src="@mipmap/bg_default_avata"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/upload_avatar_logo"-->
+        <!--android:scaleType="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="30dp" />-->
+
+    <Button
+        style="@style/RedCornerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传图片"
+        android:id="@+id/button_upload"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="跳过"/>
+
+</LinearLayout>

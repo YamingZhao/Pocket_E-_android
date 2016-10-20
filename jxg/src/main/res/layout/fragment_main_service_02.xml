@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ad_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ad_bar"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/white_line_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:gravity="clip_vertical">
+
+                <ImageView
+                    android:src="@mipmap/sep_01"
+                    android:scaleType="fitCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紧急服务"
+                    android:layout_marginLeft="4dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_01">
+
+                    <ImageView
+                        android:src="@mipmap/so_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_01"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="换胎"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_01"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_02">
+
+                    <ImageView
+                        android:src="@mipmap/so_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_02"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="拖车"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_02"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_03">
+
+                    <ImageView
+                        android:src="@mipmap/so_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_03"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="送油"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_03"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_04">
+
+                    <ImageView
+                        android:src="@mipmap/so_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_04"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="帮电"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_04"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_05">
+
+                    <ImageView
+                        android:src="@mipmap/so_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_05"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="事故咨询"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_05"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_06">
+
+                    <ImageView
+                        android:src="@mipmap/so_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_06"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="开锁"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_06"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_07">
+
+                    <ImageView
+                        android:src="@mipmap/so_07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_07"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="补胎"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_07"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_so_08">
+
+                    <ImageView
+                        android:src="@mipmap/so_08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_so_08"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="其他"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_so_08"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/white_line_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:gravity="clip_vertical">
+
+                <ImageView
+                    android:src="@mipmap/sep02"
+                    android:scaleType="fitCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约服务"
+                    android:layout_marginLeft="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="功能暂未开通，敬请期待"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_01">
+
+                    <ImageView
+                        android:src="@mipmap/po_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_01"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="保养"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_01"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_02">
+
+                    <ImageView
+                        android:src="@mipmap/po_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_02"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="钣喷"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_02"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_03">
+
+                    <ImageView
+                        android:src="@mipmap/po_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_03"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="配钥匙"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_03"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_04">
+
+                    <ImageView
+                        android:src="@mipmap/po_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_04"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="检查"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_04"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_05">
+
+                    <ImageView
+                        android:src="@mipmap/po_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_05"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="待办"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_05"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_06">
+
+                    <ImageView
+                        android:src="@mipmap/po_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_06"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="改装"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_06"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_07">
+
+                    <ImageView
+                        android:src="@mipmap/po_07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_07"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="汽车美容"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_07"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:id="@+id/btn_po_08">
+
+                    <ImageView
+                        android:src="@mipmap/po_08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/img_po_08"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="排查故障"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_po_08"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff8604"
+                android:text=""/>
+
+
+            <LinearLayout
+                android:id="@+id/btn_change_location"
+                android:orientation="horizontal"
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_province"
+                    android:layout_width="1dp"
+                    android:padding="1dp"
+                    android:layout_height="match_parent"
+                    android:text="上海"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/txt_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_poi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/txt_street"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="#666"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_location"/>
+
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="更换"/>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginTop="8dp"
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车辆型号"/>
+
+                    <TextView
+                        android:id="@+id/txt_user_car"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txt_change_user_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更换"
+                        android:textColor="@color/app_red"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/white_line_top_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务项目"/>
+
+                    <TextView
+                        android:id="@+id/txt_product"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txt_change_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更换"
+                        android:textColor="@color/app_red"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_service_date"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约时间"/>
+
+                    <TextView
+                        android:id="@+id/txt_service_date"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更换"
+                        android:textColor="@color/app_red" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="问题描述"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/white_line_top_bottom"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="top"
+                    android:hint="请输入您所遇到的问题"
+                    android:textSize="14sp"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <net.wezu.widget.RoundImageview.RoundedImageView
+                    android:id="@+id/image_upload_1"
+                    app:riv_corner_radius="4dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="#cccccc"
+                    android:layout_width="64dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop" />
+
+                <net.wezu.widget.RoundImageview.RoundedImageView
+                    android:id="@+id/image_upload_2"
+                    app:riv_corner_radius="4dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="#cccccc"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/icon_upload_default"
+                    android:scaleType="centerCrop" />
+
+                <net.wezu.widget.RoundImageview.RoundedImageView
+                    android:id="@+id/image_upload_3"
+                    app:riv_corner_radius="4dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="#cccccc"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/icon_upload_default"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Action Bar -->
+    <LinearLayout
+        android:background="#333"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="金额"/>
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:textColor="#ff4444"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/RedCornerButton"
+            android:text="确认呼叫"/>
+
+    </LinearLayout>
+</LinearLayout>

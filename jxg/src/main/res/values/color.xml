@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_background">#f8f8f8</color>
+    <color name="separator_color">#e5e5e5</color>
+    <color name="app_red">#d00</color>
+
+    <color name="bottom_actionbar_background">#333</color>
+
+    <color name="tab_text_press">#50a3ef</color>
+    <color name="update_dialog_line">#e4e4e4</color>
+</resources>

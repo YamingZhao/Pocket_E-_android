@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name_user">口袋e修</string>
+    <string name="app_name_worker">口袋e修 机修工</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="logout">退出账号</string>
+
+    <string-array name="filter_service_type">
+        <item>全部</item>
+        <item>换胎</item>
+        <item>绑电</item>
+        <item>送油</item>
+        <item>开锁</item>
+        <item>补胎</item>
+        <item>检修</item>
+        <item>拖车</item>
+        <!--<item>事故咨询</item>-->
+        <!--<item>保养</item>-->
+        <!--<item>喷漆</item>-->
+        <!--<item>配钥匙</item>-->
+        <!--<item>检查</item>-->
+        <!--<item>改装</item>-->
+        <!--<item>代办</item>-->
+    </string-array>
+
+    <string-array name="filter_distance">
+        <item>不限</item>
+        <item>1公里</item>
+        <item>2公里</item>
+        <item>3公里</item>
+        <item>5公里</item>
+        <item>10公里</item>
+        <!--<item>20公里</item>-->
+        <!--<item>30公里</item>-->
+        <!--<item>40公里</item>-->
+        <!--<item>50公里</item>-->
+        <!--<item>100公里</item>-->
+    </string-array>
+</resources>

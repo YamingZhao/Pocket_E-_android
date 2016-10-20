@@ -1,0 +1,75 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorAccent">@color/app_red</item>
+    </style>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="android:Theme.Light.NoTitleBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/default_background</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/default_background</item>
+    </style>
+
+
+    <style name="RedCornerButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/red_corner_button_background</item>
+        <item name="android:radius">3dp</item>
+    </style>
+
+
+    <style name="GrayCornerButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/gray_corner_button_background</item>
+        <item name="android:radius">3dp</item>
+    </style>
+
+    <style name="LabelTextView">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#888</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="LabelTextViewSmall">
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#888</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TextViewSmall">
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppRatingBarStyle">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">38dip</item>
+        <item name="android:maxHeight">38dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="AppRatingBarSmallStyle">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_mid</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_mid</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

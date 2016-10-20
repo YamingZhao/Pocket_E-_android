@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp">
+
+    <net.wezu.widget.SwipeRefreshLoadMoreLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:background="@color/list_bg0"
+            android:divider="@color/list_bg0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </net.wezu.widget.SwipeRefreshLoadMoreLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/refresh_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<ListView-->
+            <!--android:id="@android:id/list"-->
+            <!--android:background="@color/list_bg0"-->
+            <!--android:divider="@color/list_bg0"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>
