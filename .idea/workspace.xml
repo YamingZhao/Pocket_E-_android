@@ -32,14 +32,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestAddClass1st.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/TestAddClass1st.java">
+      <file leaf-file-name="AddGitTestFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/AddGitTestFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding>
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddedTestCommit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/AddedTestCommit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding>
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2488,7 +2502,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4523659668000" />
+        <entry key="$PROJECT_DIR$" value="4523667792000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2839,6 +2853,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/TestAddClass1st.java" />
+        <option value="$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/AddedTestCommit.java" />
       </list>
     </option>
   </component>
@@ -3333,9 +3348,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/AddGitTestFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/TestAddClass1st.java" />
+    <entry file="file://$PROJECT_DIR$/jxg/src/main/java/org/androidpn/client/AddedTestCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
           </folding>
         </state>
       </provider>
